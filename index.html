@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+    <link rel="stylesheet" href="style.css">
+    <title>Instagram</title>
+</head>
+
+<body>
+
+    <div id="container">
+
+        <nav id="header" class="navbar navbar-expand-lg bg-light">
+
+
+                <div id="logo">
+                    <a class="navbar-brand" href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+
+                <div id="menu">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#new-post">
+                                Create new post
+                            </button>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="btn dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-cog"></i>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Log out</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+
+        </nav>
+
+        <!--MODAL-->
+        <div id="new-post" class="modal fade" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="modal-body">
+                        <textarea name="new-post" id="" cols="63" rows="2"></textarea>
+                        <i class="fa fa-camera modal-icon"></i>
+                        <i class="fa fa-map-marker-alt modal-icon"></i>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-success">Post</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="content">
+
+            <ul class="nav mb-3" id="navigation" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="home-tab" data-toggle="pill" href="#home" role="tab" aria-controls="home" aria-selected="true"><i class="fa fa-th"></i></a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="profile-tab" data-toggle="pill" href="#profile" role="tab" aria-controls="profile" aria-selected="false"><i class="fa fa-square"></i></a>
+                </li>
+            </ul>
+            <div class="tab-content" id="tabContent">
+
+                <!--HOME-->
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+                    <div class="row">
+                        <div class="col-sm-6 col-lg-4 feed-post">
+                            <img class="img-fluid" src="https://cdni.autocarindia.com/ExtraImages/20200716113908_porsche_911_turbo_2020_official_rear.jpg" alt="Porsche">
+                        </div>
+                        <div class="col-sm-6 col-lg-4 feed-post">
+                            <img class="img-fluid" src="https://images.theconversation.com/files/319652/original/file-20200310-61148-vllmgm.jpg" alt="Porsche">
+                        </div>
+                        <div class="col-sm-6 col-lg-4 feed-post">
+                            <img class="img-fluid" src="https://www.melbtravel.com/wp-content/uploads/2017/12/Cover.jpg" alt="Porsche">
+                        </div>
+                    
+                    
+                        <div class="col-6 feed-post">
+                            <img class="img-fluid" src="https://i.ytimg.com/vi/ELfmZ3NVhwM/maxresdefault.jpg" alt="Porsche">
+                        </div>
+                        <div class="col-6 feed-post">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe width="450" height="252" src="https://www.youtube.com/embed/h0qvOTUUpUA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4  feed-post">
+                            <img class="img-fluid" src="https://i.ytimg.com/vi/ELfmZ3NVhwM/maxresdefault.jpg" alt="Porsche">
+                        </div>
+                   
+                        <div class="col-sm-6 col-lg-4  feed-post">
+                            <img class="img-fluid" src="https://i.ytimg.com/vi/ELfmZ3NVhwM/maxresdefault.jpg" alt="Porsche">
+                        </div>
+                        <div class="col-sm-6 col-lg-4  feed-post">
+                            <img class="img-fluid" src="https://i.ytimg.com/vi/ELfmZ3NVhwM/maxresdefault.jpg" alt="Porsche">
+                        </div>
+                    </div>
+
+                </div>
+
+                <!--PROFILE-->
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+
+
+                    <div class="row">
+                        <div class="col-6 post">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="post-header">
+                                        <div class="post-title">
+                                            <h3>Title</h3>
+                                        </div>
+                                        <div class="post-date">
+                                            <h4>09/11</h4>
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="https://cdni.autocarindia.com/ExtraImages/20200716113908_porsche_911_turbo_2020_official_rear.jpg" alt="Porsche">
+                                </div>
+                                <div class="post-caption">
+                                    <p class="likes">23 Likes</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                </div>
+                                <div class="col">
+                                    <ul class="tools">
+                                        <li><a href="#"><i class="far fa-heart"></i></a></li>
+                                        <li><input class="comment" type="text" name="comment" value="Comment..." onfocus=""></li>
+                                        <li><a href="#"><i class="fa fa-ellipsis-v"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-6 post">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="post-header">
+                                        <div class="post-title">
+                                            <h3>Title</h3>
+                                        </div>
+                                        <div class="post-date">
+                                            <h4>09/11</h4>
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid" src="https://i.ytimg.com/vi/ELfmZ3NVhwM/maxresdefault.jpg" alt="Porsche">
+                                </div>
+                                <div class="post-caption">
+                                    <p class="likes">20 Likes</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                </div>
+                                <div class="col">
+                                    <ul class="tools">
+                                        <li><a href="#"><i class="far fa-heart"></i></a></li>
+                                        <li><input class="comment" type="text" name="comment" value="Comment..." onfocus=""></li>
+                                        <li><a href="#"><i class="fa fa-ellipsis-v"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
